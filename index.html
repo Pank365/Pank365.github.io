@@ -1,40 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Richard Pinkham - ePortfolio</title>
-    <style>
-        body { font-family: Arial; margin: 40px; background-color: #f4f4f4; }
-        h1 { color: #333; }
-        nav a { margin-right: 15px; text-decoration: none; color: blue; }
-        section { margin-top: 20px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richard Pinkham | Computer Science ePortfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #1f2937;
+      --text: #e5e7eb;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --accent2: #22c55e;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 32px 20px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(15, 23, 42, 0.95);
+      position: sticky;
+      top: 0;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; }
+    h1, h2, h3 { margin-top: 0; }
+    nav {
+      margin-top: 14px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    nav a, .button {
+      color: white;
+      text-decoration: none;
+      background: #0ea5e9;
+      padding: 10px 14px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    nav a:hover, .button:hover { background: #0284c7; }
+    main { padding: 36px 20px 56px; }
+    .hero, .grid, .callout {
+      background: rgba(31, 41, 55, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #111827;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+    }
+    ul { padding-left: 20px; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 20px;
+      color: var(--muted);
+      text-align: center;
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(34, 197, 94, 0.15);
+      color: #86efac;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    .muted { color: var(--muted); }
+  </style>
 </head>
-
 <body>
+  <header>
+    <div class="wrap">
+      <h1>Richard Pinkham | Computer Science ePortfolio</h1>
+      <p class="muted">A portfolio of enhanced artifacts demonstrating growth in software design and engineering, algorithms and data structures, and databases.</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="self-assessment.html">Professional Self-Assessment</a>
+        <a href="code-review.html">Code Review</a>
+        <a href="software-design.html">Software Design</a>
+        <a href="algorithms.html">Algorithms</a>
+        <a href="databases.html">Databases</a>
+      </nav>
+    </div>
+  </header>
 
-<h1>Richard Pinkham - Computer Science ePortfolio</h1>
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <h2>Welcome</h2>
+        <p>This ePortfolio presents selected artifacts from my Computer Science program and documents how I enhanced them to demonstrate progress in three core areas required by the capstone: software design and engineering, algorithms and data structures, and databases. The portfolio also includes my professional self-assessment and code review to show how my technical skills, communication abilities, and professional goals have developed throughout the program.</p>
+        <p>Each artifact page includes a summary of the original project, the enhancements I made, the technical skills demonstrated, and the narrative reflection that explains what I learned during the process.</p>
+      </section>
 
-<nav>
-    <a href="self-assessment.html">Self-Assessment</a>
-    <a href="code-review.html">Code Review</a>
-    <a href="algorithms.html">Algorithms</a>
-    <a href="databases.html">Databases</a>
-    <a href="software-design.html">Software Design</a>
-</nav>
+      <section class="grid">
+        <div class="card">
+          <h3>Professional Self-Assessment</h3>
+          <p>An overview of my growth in the program, my strengths, and how the artifacts fit together as a whole portfolio.</p>
+          <a class="button" href="self-assessment.html">Read Self-Assessment</a>
+        </div>
+        <div class="card">
+          <h3>Code Review</h3>
+          <p>A walkthrough of the original artifacts, the problems I identified, and the enhancement plans I used to improve them.</p>
+          <a class="button" href="code-review.html">View Code Review</a>
+        </div>
+        <div class="card">
+          <h3>Software Design &amp; Engineering</h3>
+          <p>Refactoring and design improvements focused on structure, modularity, maintainability, and usability.</p>
+          <a class="button" href="software-design.html">Open Artifact</a>
+        </div>
+        <div class="card">
+          <h3>Algorithms &amp; Data Structures</h3>
+          <p>An enhanced encryption artifact showing stronger algorithmic thinking and improved program structure.</p>
+          <a class="button" href="algorithms.html">Open Artifact</a>
+        </div>
+        <div class="card">
+          <h3>Databases</h3>
+          <p>A MongoDB animal shelter artifact enhanced with safer CRUD operations, improved query flexibility, and stronger validation.</p>
+          <a class="button" href="databases.html">Open Artifact</a>
+        </div>
+      </section>
 
-<section>
-    <h2>Welcome</h2>
-    <p>
-        This ePortfolio showcases my work throughout the Computer Science program, 
-        demonstrating my skills in software design, algorithms and data structures, 
-        and database development.
-    </p>
+      <section class="callout">
+        <h2>Portfolio Highlights</h2>
+        <span class="tag">Python</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">Dash</span>
+        <span class="tag">Algorithms</span>
+        <span class="tag">Secure Coding</span>
+        <span class="tag">Refactoring</span>
+        <p>This capstone portfolio includes my code review video, original and enhanced artifacts, enhancement narratives, and a professional self-assessment, all of which are required components of the final project. The final portfolio is expected to present these materials in an organized, professional, and easy-to-navigate way rather than as a simple list of downloadable files. fileciteturn3file0</p>
+      </section>
+    </div>
+  </main>
 
-    <p>
-        Each artifact includes original and enhanced versions of my work, along with 
-        narratives explaining the improvements and skills demonstrated.
-    </p>
-</section>
-
+  <footer>
+    Richard Pinkham | CS 499 Computer Science Capstone ePortfolio
+  </footer>
 </body>
 </html>
