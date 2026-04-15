@@ -1,47 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Code Review | Richard Pinkham</title>
-  <style>
-    body { font-family: Arial, Helvetica, sans-serif; margin: 0; background: #eef2ff; color: #111827; }
-    .wrap { max-width: 980px; margin: 0 auto; padding: 28px; }
-    .card { background: #fff; border: 1px solid #c7d2fe; border-radius: 12px; padding: 24px; margin-bottom: 22px; }
-    nav a { margin-right: 10px; color: #1d4ed8; text-decoration: none; font-weight: bold; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Review - Richard Pinkham ePortfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background-color: #1f3a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2d4f7c;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 14px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #1f3a5f;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f3a5f;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>Informal Code Review</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="self-assessment.html">Self-Assessment</a>
-      <a href="software-design.html">Software Design</a>
-      <a href="algorithms.html">Algorithms</a>
-      <a href="databases.html">Databases</a>
-    </nav>
 
-    <div class="card">
-      <h2>Code Review Video</h2>
-      <p><strong>Replace this text with your video link or embedded video.</strong></p>
-      <p>Example: Paste your YouTube, OneDrive, or unlisted video URL here.</p>
-    </div>
+<header>
+    <h1>Code Review</h1>
+    <p>Richard Pinkham | CS 499 Capstone</p>
+</header>
 
-    <div class="card">
-      <h2>Review Summary</h2>
-      <p>My code review examined the original artifacts selected for my capstone and identified opportunities to improve code structure, efficiency, maintainability, database functionality, and security awareness. I used the review to explain the original functionality of each artifact, point out weaknesses in design and implementation, and outline the enhancement plan for each required category.</p>
-      <ul>
-        <li><strong>Software Design and Engineering:</strong> I identified opportunities to improve modularity, readability, documentation, and separation of concerns in the dashboard and CRUD application.</li>
-        <li><strong>Algorithms and Data Structures:</strong> I reviewed my encryption artifact to identify ways to improve logic, organization, and efficiency.</li>
-        <li><strong>Databases:</strong> I evaluated the MongoDB CRUD module and dashboard to improve query flexibility, data validation, and safe update/delete behavior.</li>
-      </ul>
-    </div>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="self-assessment.html">Self-Assessment</a>
+    <a href="code-review.html">Code Review</a>
+    <a href="software-design.html">Software Design</a>
+    <a href="algorithms.html">Algorithms</a>
+    <a href="databases.html">Databases</a>
+</nav>
 
-    <div class="card">
-      <h2>Why the Code Review Matters</h2>
-      <p>The final project requires the portfolio to include a code review video created before enhancements were completed. The review is intended to explain the original functionality, analyze the code for areas of improvement, and present the enhancement plan that aligns with the course outcomes across the three capstone categories. fileciteturn3file0</p>
-    </div>
-  </div>
+<main>
+    <h2>Code Review Video</h2>
+    <p>
+        This video provides a walkthrough of my selected artifacts prior to enhancement. 
+        It explains the original functionality, identifies areas for improvement, and 
+        outlines the enhancements planned for software design, algorithms and data structures, 
+        and database functionality.
+    </p>
+
+    <!-- EMBEDDED VIDEO -->
+    <video controls>
+        <source src="CS 405 Project Two Presentation Completed presentation01.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h2>Summary of Review</h2>
+    <p>
+        In this review, I evaluated the structure, efficiency, and functionality of my original projects. 
+        I identified opportunities to improve modular design, optimize algorithms, and enhance database 
+        operations. These improvements were later implemented in the enhanced versions of each artifact.
+    </p>
+
+    <h2>Enhancement Plan</h2>
+    <ul>
+        <li><strong>Software Design:</strong> Improve modularity, readability, and maintainability.</li>
+        <li><strong>Algorithms:</strong> Improve efficiency and structure of encryption logic.</li>
+        <li><strong>Databases:</strong> Expand CRUD functionality and improve query flexibility.</li>
+    </ul>
+</main>
+
+<footer>
+    <p>&copy; 2026 Richard Pinkham</p>
+</footer>
+
 </body>
 </html>
