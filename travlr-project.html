@@ -1,1 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travlr Getaways Project | Richard Pinkham</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --card: #1f2937;
+      --text: #e5e7eb;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --accent2: #22c55e;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 32px 20px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(15, 23, 42, 0.95);
+      position: sticky;
+      top: 0;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; }
+    h1, h2, h3 { margin-top: 0; }
+    nav {
+      margin-top: 14px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    nav a, .button {
+      color: white;
+      text-decoration: none;
+      background: #0ea5e9;
+      padding: 10px 14px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .hero-actions {
+      margin: 18px 0;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    nav a:hover, .button:hover { background: #0284c7; }
+    main { padding: 36px 20px 56px; }
+    .hero, .grid, .callout {
+      background: rgba(31, 41, 55, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #111827;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+    }
+    ul { padding-left: 20px; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 20px;
+      color: var(--muted);
+      text-align: center;
+    }
+    .tag {
+      display: inline-block;
+      background: rgba(34, 197, 94, 0.15);
+      color: #86efac;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    .muted { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Travlr Getaways Website</h1>
+      <h2>Project Case Study</h2>
+      <p>Responsive multi-page travel website built with HTML, CSS, JavaScript, and GitHub.</p>
 
+      <div class="hero-tags">
+        <span class="tag">🇺🇸 U.S. Army Veteran</span>
+        <span class="tag">⚙️ Systems Engineering</span>
+        <span class="tag">💻 Software Development</span>
+        <span class="tag">🔐 Secure Software</span>
+        <span class="tag">🛡️ Previous DoD Secret Clearance</span>
+      </div>
+      
+        <div class="hero-actions">
+          <a class="button" href="Richard_Pinkham_Resume.pdf">📄 Download Resume</a>
+          <a class="button" href="https://github.com/Pank365" target="_blank">💻 View GitHub</a>
+          <a class="button" href="#" target="_blank">💼 LinkedIn</a>
+          <a class="button" href="mailto:richard.pinkham1234@gmail.com">📧 Contact Me</a>
+      </div>
+      
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="self-assement.html">About Me</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Resume.html">Resume</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <h2>Project Overview</h2>
+        
+        <p>
+        Travlr Getaways is a responsive multi-page travel website designed to help users explore vacation destinations, lodging, meals, news, and contact information through a clean and consistent user experience.
+        </p>
+
+        <p>
+        This project demonstrates front-end development, page organization, responsive design, navigation structure, and visual consistency across multiple webpages.
+        </p>
+        
+      </section>
+
+      <section class="grid">
+        <div class="card">
+          <h3>🛰 Vacation Booking Application Enhancement</h3>
+          
+          <p><strong>Technologies:</strong> Java • MongoDB • REST API • Postman • Git</p>
+          
+          <p>
+            Enhanced an existing Java vacation booking application by improving the user experience,
+            implementing secure authentication, integrating MongoDB, developing RESTful APIs,
+            and validating functionality through Postman testing.
+          </p>
+          
+          <a class="button" href="self-assessment.html">View Project</a>
+        </div>
+        <div class="card">
+          <h3>🐾 Grazioso Salvare Dashboard</h3>
+          <p><strong>Technologies:</strong> Python • MongoDB • Dash • CRUD • Data Visualization</p>
+          
+          <p>
+            Developed an interactive animal rescue dashboard using Python, MongoDB, and Dash. Implemented 
+            CRUD functionality, database integration, filtering, and data visualization to support efficient
+            management of rescue records.
+          </p>
+          
+          <a class="button" href="code-review.html">View Project</a>
+          
+        </div>
+        <div class="card">
+          <h3>🔒 Secure Software Development</h3>
+
+          <p><strong>Technologies:</strong> Java • Secure Coding • Encryption • Software Testing </p>
+          
+          <p>
+            Applied secure software engineering practices to identify vulnerabilities,
+            implement defensive coding techniques, strengthen application security,
+            and improve software reliability through testing and analysis.
+          </p>
+          
+          <a class="button" href="software-design.html">View Project</a>
+          
+        </div>
+        <div class="card">
+          <h3>🧠 Algorithms & Data Structures</h3>
+
+          <p><strong>Technologies:</strong> Java • Algorithms • Data Structures • Problem Solving</p>
+          
+          <p>
+            Implemented and analyzed fundamental algorithms and data structures while
+            strengthening problem-solving skills, improving program efficiency,
+            and applying algorithmic thinking to software development.
+          </p>
+          
+          <a class="button" href="algorithms.html">View Project</a>
+          
+        </div>
+        <div class="card">
+          <h3>🗄 Database Engineering</h3>
+
+          <p><strong>Technologies:</strong> MongoDB • CRUD • Database Design • Query Optimization</p>
+          
+          <p>
+            Designed and enhanced MongoDB database solutions by implementing CRUD operations,
+            improving query flexibility, strengthening validation, and supporting reliable
+            data management.
+          </p>
+          
+          <a class="button" href="databases.html">View Project</a>
+        </div>
+      </section>
+
+      <section class="callout">
+        <h2>Portfolio Highlights</h2>
+        <span class="tag">Python</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">Dash</span>
+        <span class="tag">Algorithms</span>
+        <span class="tag">Secure Coding</span>
+        <span class="tag">Refactoring</span>
+        <p>This capstone portfolio includes my code review video, original and enhanced artifacts, enhancement narratives, and a professional self-assessment, all of which are required components of the final project. The final portfolio is expected to present these materials in an organized, professional, and easy-to-navigate way rather than as a simple list of downloadable files. fileciteturn3file0</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    Richard Pinkham | CS 499 Computer Science Capstone ePortfolio
+  </footer>
+</body>
+</html>
