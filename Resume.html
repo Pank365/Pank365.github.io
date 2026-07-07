@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Richard Pinkham</title>
+  <style>
+    :root {
+      --bg:#0f172a; --card:#1f2937; --text:#e5e7eb;
+      --muted:#cbd5e1; --accent:#38bdf8; --border:#334155;
+    }
+
+    * { box-sizing:border-box; }
+
+    body {
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(180deg,#0f172a 0%,#111827 100%);
+      color:var(--text);
+      line-height:1.6;
+    }
+
+    .wrap {
+      max-width:1100px;
+      margin:0 auto;
+      padding:0 20px;
+      text-align:center;
+    }
+
+    header {
+      padding:50px 20px;
+      border-bottom:1px solid var(--border);
+    }
+
+    .profile-photo {
+      width:220px;
+      height:220px;
+      object-fit:cover;
+      border-radius:50%;
+      border:4px solid var(--accent);
+      box-shadow:0 10px 25px rgba(56,189,248,.35);
+      margin-bottom:24px;
+    }
+
+    h1 { font-size:2.8rem; margin:0; }
+    h2, h3 { margin-top:0; }
+
+    .subtitle {
+      color:var(--muted);
+      font-weight:400;
+    }
+
+    nav, .hero-actions {
+      margin-top:20px;
+      display:flex;
+      justify-content:center;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    nav a, .button {
+      color:white;
+      text-decoration:none;
+      background:#0ea5e9;
+      padding:12px 20px;
+      border-radius:10px;
+      display:inline-block;
+      font-weight:600;
+    }
+
+    nav a:hover, .button:hover { background:#0284c7; }
+
+    main { padding:36px 20px 56px; }
+
+    .hero, .card {
+      background:rgba(31,41,55,.85);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:24px;
+      margin-bottom:24px;
+      text-align:left;
+    }
+
+    .grid {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:18px;
+    }
+
+    .tag {
+      display:inline-block;
+      background:rgba(34,197,94,.15);
+      color:#86efac;
+      border:1px solid rgba(34,197,94,.3);
+      padding:4px 10px;
+      border-radius:999px;
+      font-size:.9rem;
+      margin-right:8px;
+      margin-bottom:8px;
+    }
+
+    .muted { color:var(--muted); }
+
+    footer {
+      border-top:1px solid var(--border);
+      padding:30px 20px;
+      color:var(--muted);
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap">
+    <img src="images/Richard Pinkham.jpg" alt="Richard Pinkham" class="profile-photo">
+
+    <h1>Richard Pinkham</h1>
+    <h2 class="subtitle">Software Engineer | U.S. Army Veteran</h2>
+    <p>Continuing My Service Through Technology</p>
+
+    <div class="hero-actions">
+      <a class="button" href="Richard_Pinkham_Resume.pdf">📄 Download PDF Resume</a>
+      <a class="button" href="mailto:richard.pinkham1234@gmail.com">📧 Email Me</a>
+      <a class="button" href="https://github.com/Pank365" target="_blank">💻 GitHub</a>
+      <a class="button" href="https://www.linkedin.com/in/richard-pinkham-11373a106/" target="_blank">💼 LinkedIn</a>
+    </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="self-assessment.html">About Me</a>
+      <a href="travlr-project.html">Projects</a>
+      <a href="Resume.html">Resume</a>
+      <a href="mailto:richard.pinkham1234@gmail.com">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section class="hero">
+      <h2>Professional Summary</h2>
+      <p>
+        Software Engineer and U.S. Army Veteran with experience in full-stack development,
+        database integration, REST API development, secure software practices, and technical
+        troubleshooting. Background includes mission-critical systems, disciplined problem solving,
+        and a strong commitment to building reliable technology that supports real-world missions.
+      </p>
+    </section>
+
+    <section class="hero">
+      <h2>Technical Skills</h2>
+      <span class="tag">Java</span>
+      <span class="tag">Python</span>
+      <span class="tag">C#</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">HTML5</span>
+      <span class="tag">CSS3</span>
+      <span class="tag">Angular</span>
+      <span class="tag">Express.js</span>
+      <span class="tag">Node.js</span>
+      <span class="tag">MongoDB</span>
+      <span class="tag">SQL Server</span>
+      <span class="tag">REST APIs</span>
+      <span class="tag">Postman</span>
+      <span class="tag">Git</span>
+      <span class="tag">GitHub</span>
+      <span class="tag">MATLAB</span>
+      <span class="tag">Secure Software Development</span>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>🎓 Education</h2>
+        <p><strong>Bachelor of Science in Software Engineering</strong></p>
+        <p>Southern New Hampshire University</p>
+        <p class="muted">Graduated May 5, 2026</p>
+      </div>
+
+      <div class="card">
+        <h2>🇺🇸 Military Background</h2>
+        <p><strong>U.S. Army Veteran</strong></p>
+        <ul>
+          <li>Patriot Missile Operator and Maintainer</li>
+          <li>Mission-critical defense systems experience</li>
+          <li>Technical troubleshooting and operational readiness</li>
+          <li>Previous DoD Secret Clearance</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="hero">
+      <h2>Featured Software Projects</h2>
+
+      <h3>⭐ Travlr Getaways Website</h3>
+      <p>
+        Developed a full-stack travel reservation application featuring an Angular front end,
+        Express REST API, MongoDB database, administrator authentication, and responsive design.
+      </p>
+
+      <h3>🐾 Grazioso Salvare Dashboard</h3>
+      <p>
+        Developed an interactive animal rescue dashboard using Python, MongoDB, and Dash with
+        CRUD functionality, filtering, and data visualization.
+      </p>
+
+      <h3>🔒 Secure Software Development</h3>
+      <p>
+        Applied secure coding practices to identify vulnerabilities, improve application security,
+        and strengthen software reliability through testing and analysis.
+      </p>
+    </section>
+
+    <section class="hero">
+      <h2>Core Strengths</h2>
+      <ul>
+        <li>Mission-focused engineering mindset</li>
+        <li>Strong technical troubleshooting background</li>
+        <li>Software development lifecycle understanding</li>
+        <li>Secure coding and database integration experience</li>
+        <li>Clear written and verbal communication</li>
+        <li>Discipline, accountability, and continuous learning</li>
+      </ul>
+    </section>
+
+    <section class="hero">
+      <h2>Resume Download</h2>
+      <p>
+        A downloadable PDF version of my resume is available below for recruiters,
+        hiring managers, and technical reviewers.
+      </p>
+
+      <a class="button" href="Richard_Pinkham_Resume.pdf">📄 Download Resume</a>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <p><strong>Richard Pinkham</strong> | Software Engineer | U.S. Army Veteran</p>
+  <p>
+    📧 <a href="mailto:richard.pinkham1234@gmail.com">richard.pinkham1234@gmail.com</a>
+    &nbsp; | &nbsp;
+    💻 <a href="https://github.com/Pank365" target="_blank">GitHub</a>
+    &nbsp; | &nbsp;
+    💼 <a href="https://www.linkedin.com/in/richard-pinkham-11373a106/" target="_blank">LinkedIn</a>
+  </p>
+  <p>&copy; 2026 Richard Pinkham • Built with HTML, CSS, JavaScript & GitHub Pages</p>
+</footer>
+
+</body>
+</html>
