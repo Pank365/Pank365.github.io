@@ -28,7 +28,14 @@
       border-bottom: 1px solid var(--border);
       background: rgba(15, 23, 42, 0.95);
     }
-    .wrap { max-width: 1100px; margin: 0 auto; }
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header .wrap {
+      text-align: center;
+    }
     h1, h2, h3 { margin-top: 0; }
     nav {
       margin-top: 14px;
@@ -44,6 +51,23 @@
       gap: 12px;
       flex-wrap: wrap;
     }
+    nav {
+      margin-top: 18px;
+    }
+
+    .hero-actions {
+      margin: 18px 0;
+    }
+    nav a, .button {
+      color: white;
+      text-decoration: none;
+      background: #0ea5e9;
+      padding: 10px 14px;
+      border-radius: 8px;
+      display: inline-block;
+      font-weight: 600;
+      transition: 0.25s ease;
+    }
     .hero-actions {
       margin: 18px 0;
       display: flex;
@@ -52,14 +76,12 @@
       gap: 12px;
       flex-wrap: wrap;
     }
-    nav a:hover, .button:hover { background: #0284c7; }
-    main { padding: 36px 20px 56px; }
-    .hero, .grid, .callout {
-      background: rgba(31, 41, 55, 0.85);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 24px;
-      margin-bottom: 24px;
+    nav a:hover,
+    .button:hover {
+      color: white;
+      background: #0284c7;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(14, 165, 233, 0.3);
     }
     .grid {
       display: grid;
@@ -114,14 +136,14 @@
         <div class="hero-actions">
           <a class="button" href="Richard_Pinkham_Resume.pdf">📄 Download Resume</a>
           <a class="button" href="https://github.com/Pank365" target="_blank">💻 View GitHub</a>
-          <a class="button" href="#" target="_blank">💼 LinkedIn</a>
+          <a class="button" href="https://www.linkedin.com/in/richard-pinkham-11373a106/" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
           <a class="button" href="mailto:richard.pinkham1234@gmail.com">📧 Contact Me</a>
       </div>
       
       <nav>
         <a href="index.html">Home</a>
         <a href="About-Me.html">About Me</a>
-        <a href="Projects.html">Projects</a>
+        <a href="projects.html">Projects</a>
         <a href="engineering-journal.html">Journal</a>
         <a href="Resume.html">Resume</a>
         <a href="Contact.html">Contact</a>
@@ -239,11 +261,9 @@
 </main>
 
     <footer>
-      
-      <p>&copy; 2026 Richard Pinkham | Software Engineer Portfolio</p>
-      
-      <p>Built with HTML, CSS, JavaScript, and GitHub Pages</p>
-      
+    <p>&copy; 2026 Richard Pinkham | Software Engineer Portfolio</p>
+    <p>Built with HTML, CSS, JavaScript, and GitHub Pages</p>
     </footer>
 
-  </div>
+  </body>
+</html>
