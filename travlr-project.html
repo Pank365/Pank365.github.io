@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Travlr Getaways | Richard Pinkham</title>
+
+  <meta
+    name="description"
+    content="Travlr Getaways full-stack software engineering case study by Richard Pinkham."
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap">
+
+      <h1>Travlr Getaways</h1>
+
+      <h2 class="subtitle">
+        Full-Stack Travel Reservation Application
+      </h2>
+
+      <p>
+        A responsive MEAN-stack application built with Angular,
+        Express.js, Node.js, MongoDB, REST APIs, and JWT authentication.
+      </p>
+
+      <div class="hero-tags">
+        <span class="tag">Angular</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Express.js</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">REST API</span>
+        <span class="tag">JWT Authentication</span>
+      </div>
+
+      <div class="hero-actions">
+
+        <a
+          class="button"
+          href="Richard_Pinkham_Resume.pdf"
+        >
+          📄 Resume
+        </a>
+
+        <a
+          class="button"
+          href="https://github.com/Pank365"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          💻 GitHub
+        </a>
+
+        <a
+          class="button"
+          href="projects.html"
+        >
+          ← Back to Projects
+        </a>
+
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="About-Me.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="engineering-journal.html">Journal</a>
+        <a href="Resume.html">Resume</a>
+        <a href="mailto:richard.pinkham1234@gmail.com">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section class="hero">
+
+        <h2>Project Overview</h2>
+
+        <p>
+          Travlr Getaways is a full-stack travel application that allows
+          customers to browse vacation packages while authorized administrators
+          manage trip information through a secure single-page application.
+        </p>
+
+        <p>
+          The project demonstrates client-server architecture, responsive
+          interface design, RESTful API development, database integration,
+          authentication, secured updates, testing, and technical documentation.
+        </p>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>System Architecture</h2>
+
+        <img
+          class="project-image"
+          src="images/Screenshot 2026-07-07 102539.png"
+          alt="Travlr Getaways system architecture diagram"
+        >
+
+        <p class="muted">
+          Multi-tier architecture showing communication between the Angular
+          client, Express and Node.js server, REST API, and MongoDB database.
+        </p>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>Technology Stack</h2>
+
+        <div class="grid">
+
+          <div class="card">
+            <h3>Frontend</h3>
+
+            <ul>
+              <li>Angular</li>
+              <li>TypeScript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Responsive user-interface design</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Backend</h3>
+
+            <ul>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>RESTful API endpoints</li>
+              <li>JWT authentication</li>
+              <li>Protected administrative routes</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Database</h3>
+
+            <ul>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+              <li>CRUD operations</li>
+              <li>Persistent trip data</li>
+              <li>Schema-based data modeling</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>Application Interface</h2>
+
+        <img
+          class="project-image"
+          src="images/Screenshot 2026-04-14 220104.png"
+          alt="Travlr Getaways trip listing interface"
+        >
+
+        <p class="muted">
+          Angular single-page application displaying available travel packages
+          retrieved from the backend API and MongoDB database.
+        </p>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>Core Features</h2>
+
+        <div class="grid">
+
+          <div class="card">
+            <h3>Trip Browsing</h3>
+
+            <p>
+              Customers can view available travel packages through a clean,
+              responsive interface that presents trip images, locations,
+              descriptions, and pricing.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Administrator Management</h3>
+
+            <p>
+              Authorized administrators can add and edit trip data through
+              protected application features connected to the REST API.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Persistent Data</h3>
+
+            <p>
+              MongoDB stores trip records and supports reliable retrieval and
+              updates across the application.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>Authentication and Security</h2>
+
+        <img
+          class="project-image"
+          src="images/Screenshot 2026-04-14 215747.png"
+          alt="Travlr administrator login and authentication interface"
+        >
+
+        <p>
+          The application uses JWT authentication to protect administrative
+          features and secured API endpoints. After a successful login, the
+          frontend stores the token and includes it with protected requests.
+        </p>
+
+        <p>
+          Unauthorized users cannot access administrative controls, and invalid
+          or missing authentication tokens result in rejected requests.
+        </p>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>REST API Endpoints</h2>
+
+        <div class="grid">
+
+          <div class="card">
+            <h3>GET</h3>
+            <p><strong>/api/trips</strong></p>
+            <p>Retrieves the available trip records.</p>
+          </div>
+
+          <div class="card">
+            <h3>POST</h3>
+            <p><strong>/api/login</strong></p>
+            <p>Authenticates a user and returns a JWT.</p>
+          </div>
+
+          <div class="card">
+            <h3>POST</h3>
+            <p><strong>/api/register</strong></p>
+            <p>Creates a new member account.</p>
+          </div>
+
+          <div class="card">
+            <h3>POST</h3>
+            <p><strong>/api/trips</strong></p>
+            <p>Creates a new trip through an authenticated request.</p>
+          </div>
+
+          <div class="card">
+            <h3>PUT</h3>
+            <p><strong>/api/trips/:tripId</strong></p>
+            <p>Updates an existing trip record.</p>
+          </div>
+
+          <div class="card">
+            <h3>DELETE</h3>
+            <p><strong>/api/trips/:tripId</strong></p>
+            <p>Removes a trip through an authorized administrative request.</p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>Database Integration</h2>
+
+        <img
+          class="project-image"
+          src="images/Screenshot 2026-04-14 192613.png"
+          alt="MongoDB data used by the Travlr application"
+        >
+
+        <p>
+          MongoDB serves as the application's persistent data layer. The Express
+          backend uses Mongoose models to communicate with the database and
+          perform CRUD operations on trip records.
+        </p>
+
+        <p>
+          This separation keeps database logic out of the interface and supports
+          a more maintainable application architecture.
+        </p>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>Testing and Validation</h2>
+
+        <img
+          class="project-image"
+          src="images/Screenshot 2026-04-14 193353.png"
+          alt="Travlr API testing and validation"
+        >
+
+        <p>
+          I tested both public and protected application behavior, including
+          trip retrieval, user authentication, authenticated trip updates,
+          database persistence, and unauthorized request handling.
+        </p>
+
+        <ul>
+          <li>Confirmed that GET requests loaded trip data into the SPA.</li>
+          <li>Verified that successful login returned and stored a JWT.</li>
+          <li>Tested protected PUT requests with valid authorization headers.</li>
+          <li>Confirmed that invalid or missing tokens returned authorization errors.</li>
+          <li>Verified that successful updates were written to MongoDB.</li>
+        </ul>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>Engineering Challenges</h2>
+
+        <div class="grid">
+
+          <div class="card">
+            <h3>Client-Server Communication</h3>
+
+            <p>
+              Connecting the Angular frontend to the Express API required careful
+              attention to routing, request formatting, response handling, and
+              error diagnosis.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Authentication Flow</h3>
+
+            <p>
+              Implementing JWT authentication required coordinating login,
+              token storage, frontend state, protected routes, and authorization
+              headers.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Database Updates</h3>
+
+            <p>
+              Testing secured updates required confirming that the request passed
+              through the frontend service, interceptor, Express middleware,
+              controller, model, and MongoDB database.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>Skills Demonstrated</h2>
+
+        <div class="hero-tags">
+          <span class="tag">Full-Stack Development</span>
+          <span class="tag">REST API Design</span>
+          <span class="tag">Angular Development</span>
+          <span class="tag">Express.js</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">JWT Authentication</span>
+          <span class="tag">Testing</span>
+          <span class="tag">Debugging</span>
+          <span class="tag">Technical Documentation</span>
+          <span class="tag">Software Architecture</span>
+        </div>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>Lessons Learned</h2>
+
+        <p>
+          This project strengthened my understanding of how a modern full-stack
+          application operates as a complete system. I learned that the quality
+          of the application depends not only on individual technologies, but on
+          how clearly and reliably each component communicates with the others.
+        </p>
+
+        <p>
+          The project also reinforced the importance of security, negative
+          testing, modular design, clear documentation, and persistent
+          troubleshooting when multiple application layers must work together.
+        </p>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>Future Improvements</h2>
+
+        <ul>
+          <li>Add automated unit, integration, and end-to-end tests.</li>
+          <li>Implement role-based authorization.</li>
+          <li>Containerize the application with Docker.</li>
+          <li>Create a continuous integration and deployment workflow.</li>
+          <li>Improve accessibility and user-facing error messages.</li>
+          <li>Deploy the complete application to a cloud platform.</li>
+        </ul>
+
+      </section>
+
+      <section class="hero">
+
+        <h2>Explore the Project</h2>
+
+        <p>
+          Return to the complete project directory, explore my GitHub profile,
+          or contact me to discuss the engineering decisions behind this work.
+        </p>
+
+        <div class="hero-actions">
+
+          <a
+            class="button"
+            href="projects.html"
+          >
+            ← Back to Projects
+          </a>
+
+          <a
+            class="button"
+            href="https://github.com/Pank365"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            💻 View GitHub
+          </a>
+
+          <a
+            class="button"
+            href="mailto:richard.pinkham1234@gmail.com"
+          >
+            📧 Contact Me
+          </a>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+
+    <p>
+      <strong>Richard Pinkham</strong> |
+      Software Engineer |
+      U.S. Army Veteran
+    </p>
+
+    <p>
+      <a href="mailto:richard.pinkham1234@gmail.com">
+        Email
+      </a>
+      &nbsp; | &nbsp;
+
+      <a
+        href="https://github.com/Pank365"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+      &nbsp; | &nbsp;
+
+      <a
+        href="https://www.linkedin.com/in/richard-pinkham-11373a106/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+    </p>
+
+    <p>
+      &copy; 2026 Richard Pinkham |
+      Continuing My Service Through Technology
+    </p>
+
+  </footer>
+
+</body>
+</html>
